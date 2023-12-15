@@ -1,0 +1,29 @@
+.storyimage{
+    width: 250px;
+}
+/* pseudo-selector */
+ /* targetting child */
+ /* 1. descendant selector */
+ .container .storyheading h1{
+    color: rgb(119, 10, 229);
+ }
+ /* Combinator */
+  /* 1. immediate child */
+  /* 2. immediate sibling */
+  /* 3. generic child */
+  ul>li{
+    color:rgb(238, 12, 147);
+  }
+  li+li{
+   
+    background-color: rgb(247, 247, 109);
+  }
+  li~li{
+    background-color: rgb(228, 205, 250);
+  }
+  /* li:nth-child(2n+3) */
+  .ListItem:nth-child(2n+3){
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+  }
